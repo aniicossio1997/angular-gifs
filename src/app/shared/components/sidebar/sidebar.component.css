@@ -2,3 +2,12 @@
   height: 100vh;
   width: 250px;
 }
+
+.bg-pink {
+  background-color: crimson;
+  border-color: darkgrey !important;
+}
+
+button.list-group-item {
+  border-radius: 10px;
+}

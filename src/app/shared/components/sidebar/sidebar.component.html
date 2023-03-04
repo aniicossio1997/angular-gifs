@@ -1,9 +1,10 @@
 <div class="bg-dark border-right p-3" id="sidebar">
   <h3 class="text-light">GifsApp</h3>
   <hr class="text-white">
+  <h5 class="text-secondary text-center">TOP 10</h5>
   <div class="list-group list-reset">
-    <button *ngFor="let tag of tagsHistory" (click)="handleOnClickTag(tag)"
-      class="list-group-item list-group-item-action mb-2">
+    <button *ngFor="let tag of tagsHistory;let isFirst=first; " [ngClass]="{'bg-pink text-light':isFirst}"
+      (click)="handleOnClickTag(tag)" class="list-group-item list-group-item-action mb-2">
       {{tag | titlecase}}
     </button>
   </div>
